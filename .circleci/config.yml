@@ -19,4 +19,4 @@ workflows:
   version: 2
   testing:
     jobs:
-      - client-test
+      - client-testing
