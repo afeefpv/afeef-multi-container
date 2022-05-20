@@ -8,10 +8,10 @@ jobs:
       - checkout
       - setup_remote_docker:
         version: "20.10.11"
-      -run:
+      - run:
         command: docker build -t afeef/client-test -f ./client-typescript/Dockerfile.dev
         name: building the client for testing
-      -run:
+      - run:
         command: docker run afeef/client-test npm test
         name: building the client for testing
 
